@@ -20,7 +20,7 @@ a{text-decoration:none;color:inherit}
 
 .opening{min-height:100svh;background:linear-gradient(rgba(255,250,245,.18),rgba(255,250,245,.18)),url('assets/fondo-1.png') center/cover no-repeat;display:grid;place-items:center;padding:20px;position:relative;overflow:hidden}
 .opening__card{width:min(92vw,700px);background:rgba(255,250,245,.90);border:1px solid rgba(182,144,109,.34);box-shadow:var(--shadow);backdrop-filter:blur(5px);padding:42px 24px 34px;border-radius:28px;text-align:center;position:relative}
-.opening__recipient{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.08;margin:26px 0 10px;color:#654f49;display:flex;flex-direction:column;align-items:center;gap:2px}.opening__greeting{font-size:.9em}.opening__recipient-name{font-size:1.28em;font-weight:600;letter-spacing:.015em;color:#584540}
+.opening__recipient{font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.08;margin:26px 0 10px;color:#654f49;display:flex;flex-direction:column;align-items:center;gap:10px}.opening__greeting{font-size:.82em;letter-spacing:.01em}.opening__recipient-name{font-family:'Parisienne',cursive;font-size:2.05em;font-weight:400;line-height:.95;letter-spacing:0;color:#5a4541;display:block}
 .opening__divider{display:flex;gap:12px;align-items:center;justify-content:center;margin:17px auto 23px;max-width:220px;color:var(--gold)}
 .opening__divider span{height:1px;background:var(--gold);opacity:.55;flex:1}.opening__divider b{font-weight:500;font-size:16px}
 .opening__quote{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.3;margin:14px auto;max-width:590px}.opening__quote--italic{font-style:italic}.opening__quote--dedication{margin-top:18px}
@@ -52,14 +52,14 @@ a{text-decoration:none;color:inherit}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .75s ease,transform .75s ease}.reveal.reveal--delay{transition-delay:.12s}.reveal.visible{opacity:1;transform:none}
 
 @media(min-width:760px){
-  .opening__card{padding:48px 50px}.opening__recipient{font-size:29px}.opening__recipient-name{font-size:1.34em}.opening__quote{font-size:26px}.opening__quote--dedication{max-width:650px}
+  .opening__card{padding:48px 50px}.opening__recipient{font-size:29px;gap:12px}.opening__greeting{font-size:.8em}.opening__recipient-name{font-size:2.45em;color:#51403d}.opening__quote{font-size:26px}.opening__quote--dedication{max-width:650px}
   .hero{padding:78px 34px 88px}.hero__inner{grid-template-columns:1.08fr .92fr;gap:48px}.hero__copy{text-align:left;padding-left:7%}.hero__copy .eyebrow{text-align:left}.ornament-line{justify-content:flex-start;margin-left:0}.hero__name{font-size:118px}.hero__poem{font-size:24px}.hero__photo-frame{width:min(34vw,360px)}.hero__ring{width:calc(min(34vw,360px) + 20px)}
   .date-grid{grid-template-columns:1fr 1px 1fr 1fr;gap:24px}.date-separator{height:110px;width:1px}.date-panel--time{padding-left:24px}.faith-note{border-left:1px solid var(--line);padding-left:28px}
   .location-grid{grid-template-columns:1fr 1fr}.family-grid{grid-template-columns:1fr 70px 1fr}.family-center{display:block}.closing__copy{font-size:29px}
 }
 @media(min-width:1000px){.hero__inner{grid-template-columns:1.05fr .95fr}.locations{padding:86px 40px 92px}.family{padding:86px 40px 94px}.rsvp{padding:64px 40px}}
 @media(max-width:420px){
-  .opening__card{padding:32px 16px 26px}.opening__recipient{font-size:21px}.opening__recipient-name{font-size:1.3em}.opening__greeting{font-size:.88em}.opening__quote{font-size:20px;line-height:1.28}.opening__quote--dedication{font-size:19.5px;line-height:1.3}.opening__invite{font-size:21px}.opening__name{font-size:68px}
+  .opening__card{padding:32px 16px 26px}.opening__recipient{font-size:21px;gap:8px}.opening__greeting{font-size:.83em}.opening__recipient-name{font-size:2.05em}.opening__quote{font-size:20px;line-height:1.28}.opening__quote--dedication{font-size:19.5px;line-height:1.3}.opening__invite{font-size:21px}.opening__name{font-size:68px}
   .hero{padding:50px 16px 64px}.hero__name{font-size:79px}.hero__poem{font-size:20px}.hero__poem--strong{font-size:19px}.text-link{margin-top:18px}.hero__photo-frame{width:250px}.hero__ring{width:268px}
   .date-section{padding:56px 18px 62px}.date-number{font-size:76px}.time-number{font-size:56px}.date-grid{gap:20px}.date-separator{width:90px}.faith-note{padding-top:0}
   .locations{padding:58px 16px 68px}.section-script{font-size:58px}.info-card{padding:23px 16px}.info-card h3{font-size:27px}.info-card>p:not(.eyebrow){font-size:19px}
@@ -70,7 +70,7 @@ a{text-decoration:none;color:inherit}
 
 @media(max-width:360px){.opening__quote--dedication{font-size:18px}.hero__poem{font-size:19px}.hero__poem--strong{font-size:18px}}
 
-/* V5: robust recipient separation for GitHub Pages */
+/* Recipient layout: greeting above, script-style name below */
 .opening__recipient{display:flex;flex-direction:column;align-items:center;gap:10px;}
 .opening__greeting,.opening__recipient-name{display:block;position:relative;}
 .opening__recipient-name{margin-top:0;}
