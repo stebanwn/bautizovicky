@@ -1,4 +1,4 @@
-const GUESTS = [
+window.GUESTS = [
   {
     "slug": "anita-maria-del-castillo",
     "title": "Señora",
