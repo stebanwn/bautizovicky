@@ -1,27 +1,27 @@
 const params = new URLSearchParams(window.location.search);
+const pathParts = window.location.pathname.split('/').filter(Boolean);
+const repoIndex = pathParts.findIndex(part => part.toLowerCase() === 'bautizovicky');
+const pathSlug = repoIndex >= 0 ? (pathParts[repoIndex + 1] || '').toLowerCase() : '';
+const guestSlug = (params.get('guest') || pathSlug).toLowerCase().trim();
+const guest = (window.GUESTS || []).find(g => g.slug.toLowerCase() === guestSlug) || null;
 
-const recipientName = (params.get('name') || 'NOMBRE APELLIDO').trim();
-const gender = (params.get('gender') || '').toLowerCase().trim();
-const explicitTitle = (params.get('title') || '').toLowerCase().trim();
+const recipientName = (params.get('name') || guest?.name || 'NOMBRE APELLIDO').trim();
+const explicitTitle = (params.get('title') || guest?.title || '').toLowerCase().trim();
 
-let greeting = 'Estimado señor/a';
-if (explicitTitle) {
-  const map = {
-    'señor':'Estimado señor', 'senor':'Estimado señor',
-    'señora':'Estimada señora', 'senora':'Estimada señora',
-    'señorita':'Estimada señorita', 'senorita':'Estimada señorita'
-  };
-  greeting = map[explicitTitle] || explicitTitle;
-} else if (gender === 'hombre' || gender === 'm' || gender === 'masculino') {
-  greeting = 'Estimado señor';
-} else if (gender === 'mujer' || gender === 'f' || gender === 'femenino') {
-  greeting = 'Estimada señora';
-}
+const greetingMap = {
+  'señor': 'Estimado señor', 'senor': 'Estimado señor',
+  'señora': 'Estimada señora', 'senora': 'Estimada señora',
+  'señorita': 'Estimada señorita', 'senorita': 'Estimada señorita',
+  'señor y señora': 'Estimados señor y señora',
+  'familia': 'Familia'
+};
+const greeting = greetingMap[explicitTitle] || guest?.greeting || 'Estimado señor/a';
 
 document.getElementById('greeting').textContent = greeting;
 document.getElementById('recipientName').textContent = recipientName;
 
-document.getElementById('openInvite').addEventListener('click', () => {
+const openInvite = document.getElementById('openInvite');
+openInvite.addEventListener('click', () => {
   const opening = document.getElementById('opening');
   const page = document.getElementById('page');
   opening.classList.add('opening--closing');
@@ -43,5 +43,4 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.12 });
-
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
