@@ -75,17 +75,3 @@ a{text-decoration:none;color:inherit}
 .opening__greeting,.opening__recipient-name{display:block;position:relative;}
 .opening__recipient-name{margin-top:0;}
 @media(max-width:420px){.opening__recipient{gap:8px;}}
-
-
-/* V9 — guest personalization */
-.opening__greeting { margin-bottom: 0.35rem; }
-.opening__recipient-name {
-  font-family: 'Parisienne', cursive;
-  font-size: clamp(3.2rem, 8vw, 5.6rem);
-  line-height: 0.98;
-  color: #5b4a45;
-  white-space: normal;
-}
-@media (max-width: 640px) {
-  .opening__recipient-name { font-size: clamp(2.7rem, 12vw, 4.2rem); }
-}
