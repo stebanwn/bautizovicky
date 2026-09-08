@@ -1,195 +1,219 @@
 const GUESTS = [
   {
-    "slug": "anita",
+    "slug": "anita-maria-del-castillo",
     "title": "Señora",
     "name": "ANITA MARIA DEL CASTILLO",
     "people": 1,
     "observation": "",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "anita"
   },
   {
-    "slug": "paola",
+    "slug": "paola-medrano",
     "title": "Señora",
     "name": "PAOLA MEDRANO E HIJO",
     "people": 2,
     "observation": "Incluye acompañante menor",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "paola"
   },
   {
-    "slug": "ximena",
+    "slug": "ximena-medrano",
     "title": "Señora",
     "name": "XIMENA MEDRANO",
     "people": 1,
     "observation": "",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "ximena"
   },
   {
-    "slug": "fabian",
+    "slug": "fabian-medrano",
     "title": "Familia",
     "name": "FABIAN MEDRANO",
     "people": 4,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "fabian"
   },
   {
-    "slug": "danilo",
+    "slug": "danilo-suarez",
     "title": "Familia",
     "name": "DANILO SUÁREZ",
     "people": 4,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "danilo"
   },
   {
-    "slug": "oswaldo",
+    "slug": "oswaldo-del-castillo",
     "title": "Señor",
     "name": "OSWALDO DEL CASTILLO",
     "people": 1,
     "observation": "",
-    "greeting": "Estimado señor"
+    "greeting": "Estimado señor",
+    "alias": "oswaldo"
   },
   {
-    "slug": "gabriela",
+    "slug": "gabriela-del-castillo",
     "title": "Señora",
     "name": "GABRIELA DEL CASTILLO E HIJO",
     "people": 2,
     "observation": "Incluye acompañante menor",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "gabriela"
   },
   {
-    "slug": "richard",
+    "slug": "richard-del-castillo",
     "title": "Señor y señora",
     "name": "RICHARD DEL CASTILLO",
     "people": 2,
     "observation": "",
-    "greeting": "Estimados señor y señora"
+    "greeting": "Estimados señor y señora",
+    "alias": "richard"
   },
   {
-    "slug": "teresa",
+    "slug": "teresa-pena",
     "title": "Señora",
     "name": "TERESA PEÑA E HIJO",
     "people": 2,
     "observation": "Incluye acompañante menor",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "teresa"
   },
   {
-    "slug": "roberto",
+    "slug": "roberto-del-castillo",
     "title": "Familia",
     "name": "ROBERTO DEL CASTILLO",
     "people": 5,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "roberto"
   },
   {
-    "slug": "manuel",
+    "slug": "manuel-del-castillo",
     "title": "Señor y señora",
     "name": "MANUEL DEL CASTILLO",
     "people": 2,
     "observation": "",
-    "greeting": "Estimados señor y señora"
+    "greeting": "Estimados señor y señora",
+    "alias": "manuel"
   },
   {
-    "slug": "paul",
+    "slug": "paul-del-castillo",
     "title": "Familia",
     "name": "PAUL DEL CASTILLO",
     "people": 5,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "paul"
   },
   {
-    "slug": "jose",
+    "slug": "jose-del-castillo",
     "title": "Señor",
     "name": "JOSÉ DEL CASTILLO E HIJO",
     "people": 2,
     "observation": "Incluye acompañante menor",
-    "greeting": "Estimado señor"
+    "greeting": "Estimado señor",
+    "alias": "jose"
   },
   {
-    "slug": "gabriel",
+    "slug": "gabriel-rosero",
     "title": "Familia",
     "name": "GABRIEL ROSERO",
     "people": 3,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "gabriel"
   },
   {
-    "slug": "marco",
+    "slug": "marco-negrete",
     "title": "Señor y señora",
     "name": "MARCO NEGRETE",
     "people": 2,
     "observation": "",
-    "greeting": "Estimados señor y señora"
+    "greeting": "Estimados señor y señora",
+    "alias": "marco"
   },
   {
-    "slug": "alexander",
+    "slug": "alexander-palma-y-johana-negrete",
     "title": "Señor y señora",
     "name": "ALEXANDER PALMA Y JOHANA NEGRETE",
     "people": 2,
     "observation": "",
-    "greeting": "Estimados señor y señora"
+    "greeting": "Estimados señor y señora",
+    "alias": "alexander"
   },
   {
-    "slug": "marcos",
+    "slug": "marcos-estrella",
     "title": "Familia",
     "name": "MARCOS ESTRELLA",
     "people": 3,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "marcos"
   },
   {
-    "slug": "jose-luis",
+    "slug": "jose-luis-larreategui",
     "title": "Familia",
     "name": "JOSE LUIS LARREATEGUI",
     "people": 3,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "jose-luis"
   },
   {
-    "slug": "stefany",
+    "slug": "stefany-pullupaxi",
     "title": "Señora",
     "name": "Stefany Pullupaxi E HIJO",
     "people": 2,
     "observation": "Incluye acompañante menor",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "stefany"
   },
   {
-    "slug": "carlos",
+    "slug": "carlos-ron",
     "title": "Señor",
     "name": "CARLOS RON",
     "people": 1,
     "observation": "",
-    "greeting": "Estimado señor"
+    "greeting": "Estimado señor",
+    "alias": "carlos"
   },
   {
-    "slug": "diego",
+    "slug": "diego-ron",
     "title": "Señor",
     "name": "DIEGO RON",
     "people": 1,
     "observation": "",
-    "greeting": "Estimado señor"
+    "greeting": "Estimado señor",
+    "alias": "diego"
   },
   {
-    "slug": "alexis",
+    "slug": "alexis-solorzano",
     "title": "Familia",
     "name": "ALEXIS SOLORZANO",
     "people": 3,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "alexis"
   },
   {
-    "slug": "didier",
+    "slug": "didier-logana",
     "title": "Familia",
     "name": "DIDIER LOGAÑA",
     "people": 4,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "didier"
   },
   {
-    "slug": "patricia",
+    "slug": "patricia-almeida",
     "title": "Señora",
     "name": "PATRICIA ALMEIDA E HIJA",
     "people": 2,
     "observation": "Incluye acompañante menor",
-    "greeting": "Estimada señora"
+    "greeting": "Estimada señora",
+    "alias": "patricia"
   },
   {
     "slug": "oswaldo-santamaria",
@@ -197,7 +221,8 @@ const GUESTS = [
     "name": "OSWALDO SANTAMARIA",
     "people": 3,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "oswaldo-santamaria"
   },
   {
     "slug": "carlos-salguero",
@@ -205,15 +230,17 @@ const GUESTS = [
     "name": "CARLOS SALGUERO",
     "people": 5,
     "observation": "",
-    "greeting": "Familia"
+    "greeting": "Familia",
+    "alias": "carlos-salguero"
   },
   {
-    "slug": "liliana",
+    "slug": "liliana-pacheco",
     "title": "Señorita",
     "name": "LILIANA PACHECO",
     "people": 1,
     "observation": "",
-    "greeting": "Estimada señorita"
+    "greeting": "Estimada señorita",
+    "alias": "liliana"
   },
   {
     "slug": "richard-cagua",
@@ -221,30 +248,34 @@ const GUESTS = [
     "name": "RICHARD CAGUA",
     "people": 1,
     "observation": "",
-    "greeting": "Estimado señor"
+    "greeting": "Estimado señor",
+    "alias": "richard-cagua"
   },
   {
-    "slug": "oscar",
+    "slug": "oscar-alcaciega",
     "title": "Señor",
     "name": "OSCAR ALCACIEGA",
     "people": 1,
     "observation": "",
-    "greeting": "Estimado señor"
+    "greeting": "Estimado señor",
+    "alias": "oscar"
   },
   {
-    "slug": "shina",
+    "slug": "shina-sepa",
     "title": "Señorita",
     "name": "SHINA SEPA",
     "people": 1,
     "observation": "",
-    "greeting": "Estimada señorita"
+    "greeting": "Estimada señorita",
+    "alias": "shina"
   },
   {
-    "slug": "santiago",
+    "slug": "santiago-arguello",
     "title": "Señor y señora",
     "name": "SANTIAGO ARGUELLO",
     "people": 2,
     "observation": "",
-    "greeting": "Estimados señor y señora"
+    "greeting": "Estimados señor y señora",
+    "alias": "santiago"
   }
 ];
