@@ -4,12 +4,12 @@ const recipientName = (params.get('name') || 'NOMBRE APELLIDO').trim();
 const explicitTitle = (params.get('title') || '').toLowerCase().trim();
 
 const map = {
-  'señor': 'Estimado señor', 'senor': 'Estimado señor',
-  'señora': 'Estimada señora', 'senora': 'Estimada señora',
-  'señorita': 'Estimada señorita', 'senorita': 'Estimada señorita',
-  'familia': 'Estimada familia',
-  'señor y señora': 'Estimados señor y señora',
-  'senor y senora': 'Estimados señor y señora'
+  'señor': 'Estimado Señor', 'senor': 'Estimado Señor',
+  'señora': 'Estimada Señora', 'senora': 'Estimada Señora',
+  'señorita': 'Estimada Señorita', 'senorita': 'Estimada Señorita',
+  'familia': `Estimado ${recipientName} y Familia`,
+  'señor y señora': 'Estimados Señor y Señorita',
+  'senor y senora': 'Estimados Señor y Señorita'
 };
 
 const greeting = map[explicitTitle] || 'Estimado señor/a';
