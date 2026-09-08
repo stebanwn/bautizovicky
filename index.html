@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbf7f2" />
+  <meta name="description" content="Invitación digital al bautizo de Vicky" />
+  <title>Bautizo de Vicky</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening__card">
+      <p class="eyebrow">UNA INVITACIÓN ESPECIAL</p>
+      <p class="opening__recipient"><span id="greeting">Estimado señor/a</span><br><span id="recipientName">NOMBRE APELLIDO</span></p>
+      <div class="opening__divider"><span></span><b>♥</b><span></span></div>
+      <p class="opening__quote opening__quote--italic">Desde que llegaste a mi vida,<br>mi corazón conoció un amor infinito.</p>
+      <p class="opening__quote"><strong>Hoy quiero entregarte a Dios, Vicky,</strong><br>con la esperanza de que Él ilumine siempre tu camino.</p>
+      <p class="opening__invite">Te invitamos a acompañarnos en el Bautizo de</p>
+      <h1 class="script opening__name">Vicky</h1>
+      <button id="openInvite" class="primary-btn">ABRIR INVITACIÓN <span>↓</span></button>
+      <p class="opening__hint">Toca para continuar</p>
+    </div>
+  </div>
+
+  <div class="page is-hidden" id="page" aria-hidden="true">
+    <section class="hero section-bg section-bg--one">
+      <div class="hero__inner">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">UN MOMENTO · LLENO DE AMOR</p>
+          <h2 class="script hero__name">Vicky</h2>
+          <div class="ornament-line"><span></span><b>SU BAUTIZO</b><span></span></div>
+          <div class="hero__message">
+            <p class="hero__poem hero__poem--italic">La vida está hecha de pequeños instantes,<br>pero algunos se quedan para siempre en el corazón.</p>
+            <p class="hero__poem">Hoy queremos guardar uno de ellos junto a las personas<br class="desktop-only"> que hacen más bonito nuestro camino.</p>
+            <p class="hero__poem hero__poem--strong"><strong>Acompáñanos a</strong> ser parte de un recuerdo que atesoraremos toda la vida.</p>
+          </div>
+          <a class="text-link" href="#evento">DESCUBRIR LA INVITACIÓN <span>↓</span></a>
+        </div>
+        <div class="hero__photo reveal reveal--delay">
+          <div class="hero__photo-frame">
+            <img src="assets/vicky.png" alt="Vicky" />
+          </div>
+          <div class="hero__ring" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evento" class="section date-section reveal">
+      <div class="date-grid">
+        <div class="date-panel">
+          <p class="eyebrow">FECHA DEL EVENTO</p>
+          <p class="date-weekday">SÁBADO</p>
+          <div class="date-number">19</div>
+          <p class="date-month">SEPTIEMBRE 2026</p>
+        </div>
+        <div class="date-separator" aria-hidden="true"></div>
+        <div class="date-panel date-panel--time">
+          <p class="eyebrow">HORA</p>
+          <p class="date-weekday">A LAS</p>
+          <div class="time-number">15:30</div>
+          <p class="date-month">HORAS</p>
+        </div>
+        <div class="faith-note">
+          <div class="dove" aria-hidden="true">✦</div>
+          <p>UN DÍA PARA CELEBRAR</p>
+          <span>su llegada a la fe</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section locations reveal">
+      <div class="section-heading">
+        <p class="eyebrow">EL MOMENTO</p>
+        <h2 class="script section-script">Con cariño</h2>
+      </div>
+      <div class="location-grid">
+        <article class="info-card">
+          <div class="card-icon">⌂</div>
+          <p class="eyebrow">CEREMONIA</p>
+          <h3>Iglesia Católica Santa Anita - Barrionuevo</h3>
+          <p>Barrionuevo, Av Serapio Japerabi</p>
+          <a class="soft-btn" href="https://maps.app.goo.gl/tLtWJHdhfMeu6ynH6" target="_blank" rel="noopener noreferrer">VER EN MAPS ↗</a>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">✧</div>
+          <p class="eyebrow">RECEPCIÓN</p>
+          <h3>Recepciones Abigail</h3>
+          <p>Av. Mariscal Sucre y Caranqui Oe6-110</p>
+          <a class="soft-btn" href="https://maps.app.goo.gl/ReAGVzxAZia5ZcjC8" target="_blank" rel="noopener noreferrer">VER EN MAPS ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section family section-bg section-bg--two reveal">
+      <div class="family-heading">
+        <p class="eyebrow">CON AMOR</p>
+        <h2 class="script section-script">Nuestra familia</h2>
+      </div>
+      <div class="family-grid">
+        <div class="family-card">
+          <p class="eyebrow">FAMILIA</p>
+          <div class="family-list">
+            <p><span>Papito</span> Paco</p>
+            <p><span>Mamita</span> Margarita</p>
+            <p><span>Mamá</span> Fernanda</p>
+          </div>
+        </div>
+        <div class="family-center" aria-hidden="true"><span>♥</span></div>
+        <div class="family-card">
+          <p class="eyebrow">PADRINOS</p>
+          <div class="family-list family-list--center">
+            <p>Daniel Espinoza</p>
+            <p>Verónica del Castillo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp reveal">
+      <div class="rsvp-card">
+        <p class="eyebrow">♥ &nbsp; ¿NOS ACOMPAÑAS?</p>
+        <h2>Te esperamos con mucho cariño.</h2>
+        <a id="whatsappLink" class="primary-btn primary-btn--large" target="_blank" rel="noopener noreferrer">CONFIRMAR ASISTENCIA <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section-bg section-bg--three closing reveal">
+      <div class="closing__content">
+        <p class="eyebrow">CON TODO NUESTRO AMOR</p>
+        <h2 class="script closing__title">Gracias</h2>
+        <p class="closing__copy">por estar, por acompañarnos<br>y por ser parte de este momento tan especial.</p>
+        <p class="closing__copy">Su presencia hará que este día<br>sea aún más bonito e inolvidable.</p>
+        <div class="closing__signature"><strong>Con todo nuestro amor,</strong><br><span>Vicky y su familia</span> 🤍</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
