@@ -35,7 +35,7 @@ document.getElementById('openInvite').addEventListener('click', () => {
 });
 
 const phone = '593959191735';
-const defaultMessage = `Hola, confirmo mi asistencia al bautizo de Vicky.\n\nInvitado/a: ${recipientName}`;
+const defaultMessage = `Hola, confirmo mi asistencia al bautizo de Vicky.\n\nNombre: ${recipientName}\nAcompañado por: `;
 document.getElementById('whatsappLink').href = `https://wa.me/${phone}?text=${encodeURIComponent(defaultMessage)}`;
 
 const observer = new IntersectionObserver((entries) => {
