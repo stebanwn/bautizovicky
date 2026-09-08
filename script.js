@@ -2,20 +2,31 @@ const params = new URLSearchParams(window.location.search);
 
 const recipientName = (params.get('name') || 'NOMBRE APELLIDO').trim();
 const explicitTitle = (params.get('title') || '').toLowerCase().trim();
+const extra = (params.get('extra') || '').trim();
 
 const map = {
-  'señor': 'Estimado Señor', 'senor': 'Estimado Señor',
-  'señora': 'Estimada Señora', 'senora': 'Estimada Señora',
-  'señorita': 'Estimada Señorita', 'senorita': 'Estimada Señorita',
-  'familia': `Estimado ${recipientName} y Familia`,
-  'señor y señora': 'Estimados Señor y Señorita',
-  'senor y senora': 'Estimados Señor y Señorita'
+  'señor': 'Estimado Señor',
+  'senor': 'Estimado Señor',
+  'señora': 'Estimada Señora',
+  'senora': 'Estimada Señora',
+  'señorita': 'Estimada Señorita',
+  'senorita': 'Estimada Señorita'
 };
 
-const greeting = map[explicitTitle] || 'Estimado señor/a';
+const isFamily = explicitTitle === 'familia';
+const greeting = isFamily ? 'Estimado' : (map[explicitTitle] || 'Estimado Señor');
 
 document.getElementById('greeting').textContent = greeting;
 document.getElementById('recipientName').textContent = recipientName;
+const familySuffix = document.getElementById('familySuffix');
+let suffixText = '';
+if (isFamily) {
+  suffixText = 'y Familia';
+} else if (extra) {
+  suffixText = extra;
+}
+familySuffix.textContent = suffixText;
+familySuffix.hidden = !suffixText;
 
 document.getElementById('openInvite').addEventListener('click', () => {
   const opening = document.getElementById('opening');
