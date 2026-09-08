@@ -69,3 +69,9 @@ a{text-decoration:none;color:inherit}
 }
 
 @media(max-width:360px){.opening__quote--dedication{font-size:18px}.hero__poem{font-size:19px}.hero__poem--strong{font-size:18px}}
+
+/* V5: robust recipient separation for GitHub Pages */
+.opening__recipient{display:flex;flex-direction:column;align-items:center;gap:10px;}
+.opening__greeting,.opening__recipient-name{display:block;position:relative;}
+.opening__recipient-name{margin-top:0;}
+@media(max-width:420px){.opening__recipient{gap:8px;}}
